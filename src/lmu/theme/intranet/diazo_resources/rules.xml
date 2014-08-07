@@ -7,13 +7,13 @@
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
 
-        <theme href="index.html" />
+        <!--
+        <theme href="https://iukintest.zuv.uni-muenchen.de/index.html" />
+        -->
+        <theme href="http://cms-test-pm3.verwaltung.uni-muenchen.de:8080/prototyp-1/sp/index.html" />
 
         <!-- Replace title with Plone's page title  -->
         <replace css:theme="html head title" css:content="html head title" />
-
-        <!-- Drop the favicon spec coming from content; we'll use the one in the theme. -->
-        <drop content="/html/head/link[@rel='shortcut icon']" />
 
         <!-- Copy base tag from Plone -->
         <before css:theme-children="html head" css:content="html head base" />
@@ -26,11 +26,11 @@
         <merge attributes="class" css:theme="body" css:content="body" />
 
         <!-- Copy script tags from Plone head to end of body -->
-        <after css:theme-children="html body" css:content="html head script" />
+        <!--<after css:theme-children="html body" css:content="html head script" />-->
 
         <!-- Move inline scripts in content to end of body -->
         <drop css:content="body script" />
-        <after css:theme-children="html body" css:content="html body script" method="raw" />
+        <!--<after css:theme-children="html body" css:content="html body script" method="raw" />-->
 
         <!-- Insert your own rules here -->
 
@@ -38,7 +38,9 @@
              with rules that copy particular parts of the content into particular
              targets in your theme.
          -->
-        <after css:theme="body p" css:content="#visual-portal-wrapper" />
+        <replace css:theme-children="#content" css:content-children="#content" />
+
+        <replace css:theme-children='a[title="PROTOTYP 1"]' css:content-children="#user-name" />
 
     </rules>
 
