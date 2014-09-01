@@ -3,6 +3,6 @@
      so that it will be activated
      when this product is installed. -->
 <layers>
-    <layer name="lmu.intranet.customization.layer"
-      interface="lmu.intranet.interfaces.ICustomTheme" />
+    <layer name="lmu.theme.intranet.intranet_layer"
+      interface="lmu.theme.intranet.interfaces.ILMUIntranetTheme" />
 </layers>

@@ -10,7 +10,8 @@
         <!--
         <theme href="https://iukintest.zuv.uni-muenchen.de/index.html" />
         -->
-        <theme href="http://cms-test-pm3.verwaltung.uni-muenchen.de:8080/prototyp-1/sp/index.html" />
+        <!--<theme href="http://cms-test-pm3.verwaltung.uni-muenchen.de:8080/prototyp-1/sp/index.html" if="not:$offline"/>-->
+        <theme href="theme.html" />
 
         <!-- Replace title with Plone's page title  -->
         <replace css:theme="html head title" css:content="html head title" />
