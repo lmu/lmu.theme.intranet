@@ -1,5 +1,219 @@
 /* Stylesheet for the 'ICustomTheme' Plone browser layer */
 
-body {
-    background-color: pink;
+.visualClear {
+    clear: both;
+}
+
+main#content {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+#blog-section a {
+    color: #008b45;
+}
+
+#blog-section a:hover,
+#blog-section a:active,
+#blog-section a:focus {
+    color: #006633;
+    text-decoration: underline;
+}
+
+#blog-section a:hover *,
+#blog-section a:active *,
+#blog-section a:focus * {
+    color: #006633;
+}
+
+.blog-frontpage #blog-main,
+.blog-frontpage #blog-footer { 
+    background-color: #d2d2d2;
+}
+
+#blog-header a.right {
+    float: right;
+    margin-top: 15px;
+}
+
+#blog-header {
+    height: 40px;
+}
+
+#blog-header h1,
+#blog-header h2 {
+    line-height: 30px;
+    font-style: italic;
+    color: #6f6f6f;
+}
+
+#blog-header h1 *,
+#blog-header h2 * {
+    font-size: 24px;
+}
+
+
+#blog-main .comment-sign,
+.portaltype-blog-entry .comment-sign {
+    background-image: url('http://localhost:8080/Plone/bg-overview-column.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 16px 16px;
+    background-color: #008b45;
+    color: #FFF;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+    float: right;
+    text-align: center;
+    min-width: 30px;
+}
+
+#blog-main a.comment-sign,
+.portaltype-blog-entry a.comment-sign {
+    color: #FFF;
+}
+
+#blog-main a.comment-sign:hover,
+#blog-main a.comment-sign:active,
+.portaltype-blog-entry a.comment-sign:hover,
+.portaltype-blog-entry a.comment-sign:active {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+#blog-main div.row .tileItem {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #008b45;
+    border-bottom-width: 1px;
+}
+
+#blog-main div.row:last-of-type .tileItem{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: none;
+}
+
+#blog-main * {
+    color #000;
+}
+
+
+.portaltype-blog-folder .documentByLine,
+.portaltype-blog-entry .documentByLine {
+    margin-bottom: 0.5em;
+}
+
+.blog-frontpage #blog-main figure,
+.portaltype-blog-folder figure,
+.portaltype-blog-entry figure {
+    margin: 0;
+    padding: 0;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #008b45;
+    text-align: center;
+}
+
+.blog-frontpage #blog-main figure {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+
+}
+
+#blog-main figure figcaption {
+    background-color: #d9d9d9;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+
+#blog-main h3 {
+    margin-top: 0;
+    padding : 0;
+    line-height: 100%;
+}
+
+#blog-footer {
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+#blog-footer * {
+    font-size: 12px;
+}
+
+#blog-header a.button,
+#blog-footer a.button {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: #008b45;
+    border-color: #008b45;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.portaltype-blog-entry figure figcaption {
+    background-color: #d9d9d9;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    text-align: left;
+}
+
+.portaltype-blog-entry main .button,
+.portaltype-blog-entry main button {
+    background-color: transparent;
+    color: #008b45;
+    border-color: #008b45;
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.portaltype-blog-entry main .button:hover,
+.portaltype-blog-entry main button:hover,
+.portaltype-blog-entry main .button:focus,
+.portaltype-blog-entry main button:focus {
+    background-color: #008b45;
+    color: #FFF;
+    border-color: #008b45;
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fieldTextFormat,
+#formfield-form-widgets-IVersionable-changeNote {
+    display: none;
+}
+#formfield-form-widgets-ILeadImage-image {
+    margin-top: 0.5em;
+}
+
+
+.commentImage img {
+    height: 32px;
+}
+
+.row #commenting fieldset, .row .discussion fieldset {
+    border-color: #008b45;
 }

@@ -12,16 +12,20 @@
         -->
         <!--<theme href="http://cms-test-pm3.verwaltung.uni-muenchen.de:8080/prototyp-1/sp/index.html" if="not:$offline"/>-->
         <theme href="theme.html" />
+        <notheme if="$ajax_load" />
 
         <!-- Replace title with Plone's page title  -->
         <replace css:theme="html head title" css:content="html head title" />
 
         <!-- Copy base tag from Plone -->
         <before css:theme-children="html head" css:content="html head base" />
-
+        <before css:theme-children="html head"
+               content="/html/head/link | /html/head/script | /html/head/style" />
         <!-- Copy link, style, meta tags from Plone head -->
+        <!--<after css:theme-children="html head"
+               content="/html/head/link | /html/head/style | /html/head/meta" />-->
         <after css:theme-children="html head"
-               content="/html/head/link | /html/head/style | /html/head/meta" />
+               content="/html/head/meta" />
 
         <!-- merge classes from Plone body with theme body -->
         <merge attributes="class" css:theme="body" css:content="body" />
@@ -30,7 +34,7 @@
         <!--<after css:theme-children="html body" css:content="html head script" />-->
 
         <!-- Move inline scripts in content to end of body -->
-        <drop css:content="body script" />
+        <!--<drop css:content="body script" />-->
         <!--<after css:theme-children="html body" css:content="html body script" method="raw" />-->
 
         <!-- Insert your own rules here -->
@@ -39,10 +43,16 @@
              with rules that copy particular parts of the content into particular
              targets in your theme.
          -->
-        <replace css:theme-children="#content" css:content-children="#content" />
-
+        <replace css:theme="#content-core" css:content-children="#content" />
+        
         <replace css:theme-children='a[title="PROTOTYP 1"]' css:content-children="#user-name" />
 
+        <!--<replace css:theme="#content-core" href="http://localhost:8080/Plone/blog-mit/frontpage_view?omit=True" css:content-children="body"  />-->
+
+        <drop css:content="#breadcrumbs-you-are-here" />
+        <drop css:content=".breadcrumbSeparator" />
+        <replace css:theme-children=".sp-breadcrumb" css:content-children="#portal-breadcrumbs" />
+        <strip css:content="#breadcrumbs-current" />
     </rules>
 
 </rules>
