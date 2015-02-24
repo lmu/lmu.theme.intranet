@@ -110,9 +110,6 @@ def write(s):
 
 
 if not results:
-    write('''<fieldset class="livesearchContainer">''')
-    write('''<legend id="livesearchLegend">%s</legend>'''
-            % ts.translate(legend_livesearch, context=REQUEST))
     write('''<div class="LSIEFix">''')
     write('''<div id="LSNothingFound">%s</div>'''
             % ts.translate(label_no_results_found, context=REQUEST))
@@ -122,11 +119,7 @@ if not results:
             ts.translate(label_advanced_search, context=REQUEST)))
     write('''</div>''')
     write('''</div>''')
-    write('''</fieldset>''')
 else:
-    write('''<fieldset class="livesearchContainer">''')
-    write('''<legend id="livesearchLegend">%s</legend>'''
-            % ts.translate(legend_livesearch, context=REQUEST))
     write('''<div class="LSIEFix">''')
     write('''<ul class="LSTable">''')
     for result in results[:limit]:
@@ -180,6 +173,5 @@ else:
 
     write('''</ul>''')
     write('''</div>''')
-    write('''</fieldset>''')
 
 return '\n'.join(output).encode('utf-8')
