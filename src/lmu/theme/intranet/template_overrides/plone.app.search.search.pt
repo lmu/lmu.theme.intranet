@@ -348,6 +348,7 @@
                                       </div>
 
                                       <cite class="documentLocation link-location"
+                                            tal:on-error="string: no breadcrumbs available"
                                             tal:define="breadcrumbs python: view.breadcrumbs(item);
                                                         is_rtl context/@@plone_portal_state/is_rtl;"
                                             tal:condition='breadcrumbs'>
