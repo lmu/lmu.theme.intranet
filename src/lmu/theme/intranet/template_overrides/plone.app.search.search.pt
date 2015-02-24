@@ -275,7 +275,7 @@
                           <dl class="searchResults">
                               <tal:results repeat="item batch">
                                     <dt tal:attributes="class item/ContentTypeClass">
-                                      <img tal:replace="structure item/getIcon" />
+                                      <!--img tal:replace="structure item/getIcon" /-->
                                       <a href="#"
                                          tal:define="item_url item/getURL;
                                                      item_type item/PortalType"
