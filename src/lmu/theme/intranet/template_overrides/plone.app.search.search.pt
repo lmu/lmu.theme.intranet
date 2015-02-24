@@ -301,7 +301,8 @@
                                             </tal:block>
                                         </span>
 
-                                        <span tal:define="publication_date item/EffectiveDate;
+                                        <span tal:on-error="string: Fiona Date missing" 
+                                              tal:define="publication_date item/EffectiveDate;
                                                           modification_date item/ModificationDate">
 
                                             <span class="documentPublished" tal:condition="python: publication_date != 'None'">
@@ -326,7 +327,8 @@
 
                                         </span>
 
-                                        <span tal:define="categories item/Subject|nothing"
+                                        <span tal:on-error="string: Fiona Subject Error"
+                                              tal:define="categories item/Subject|nothing"
                                               tal:condition="categories">
                                           &mdash;
                                           <tal:filedunder i18n:translate="">filed under:</tal:filedunder>
