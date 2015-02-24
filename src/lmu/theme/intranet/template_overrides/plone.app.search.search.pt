@@ -286,7 +286,7 @@
                                     <dd>
                                       <span class="discreet" i18n:domain="plone"
                                         tal:condition="show_about">
-                                        <span class="documentAuthor"
+                                        <!--span class="documentAuthor"
                                           i18n:translate="label_by_author"
                                           tal:on-error="string: Cannot identify author">
                                         by
@@ -300,7 +300,7 @@
                                                 Bob Dobalina
                                               </a>
                                             </tal:block>
-                                        </span>
+                                        </span-->
 
                                         <span tal:on-error="string: Fiona Date missing" 
                                               tal:define="publication_date item/EffectiveDate;
