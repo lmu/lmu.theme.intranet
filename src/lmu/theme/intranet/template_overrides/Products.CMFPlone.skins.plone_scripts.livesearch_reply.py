@@ -75,11 +75,11 @@ params = {'SearchableText': r,
 if 'portal_type' not in REQUEST:
     params['portal_type'] = friendly_types
 
-if path is None:
+#if path is None:
     # useful for subsides
-    params['path'] = getNavigationRoot(context)
-else:
-    params['path'] = path
+#    params['path'] = getNavigationRoot(context)
+#else:
+params['path'] = path
 
 # search limit+1 results to know if limit is exceeded
 results = catalog(REQUEST, **params)
