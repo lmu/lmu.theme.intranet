@@ -287,7 +287,8 @@
                                       <span class="discreet" i18n:domain="plone"
                                         tal:condition="show_about">
                                         <span class="documentAuthor"
-                                            i18n:translate="label_by_author">
+                                          i18n:translate="label_by_author"
+                                          tal:on-error="string: Cannot identify author">
                                         by
                                             <tal:block tal:condition="item/Creator"
                                                 tal:define="author python:context.portal_membership.getMemberInfo(item.Creator())">
