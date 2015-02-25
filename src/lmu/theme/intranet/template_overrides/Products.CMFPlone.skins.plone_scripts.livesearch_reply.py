@@ -82,6 +82,7 @@ else:
     params['path'] = path
 
 # search limit+1 results to know if limit is exceeded
+#context.plone_log(str(params))
 results = catalog(REQUEST, **params)
 
 searchterm_query = '?searchterm=%s' % url_quote_plus(q)
@@ -123,6 +124,7 @@ else:
     write('''<div class="LSIEFix">''')
     write('''<ul class="LSTable">''')
     for result in results[:limit]:
+        #context.plone_log(str(result))
         icon = plone_view.getIcon(result)
         itemUrl = result.getURL()
         if result.portal_type in useViewAction:
@@ -132,8 +134,9 @@ else:
 
         write('''<li class="LSRow">''')
         write(icon.html_tag() or '')
-        full_title = safe_unicode(pretty_title_or_id(result))
-        if len(full_title) > MAX_TITLE:
+        #full_title = safe_unicode(pretty_title_or_id(result))
+        full_title = safe_unicode(result.Title) #get('Title','No Title set'))
+        if full_title and len(full_title) > MAX_TITLE:
             display_title = ''.join((full_title[:MAX_TITLE], '...'))
         else:
             display_title = full_title
@@ -144,7 +147,7 @@ else:
         write('''<a href="%s" title="%s" class="%s">%s</a>'''
                 % (itemUrl, full_title, klass, display_title))
         display_description = safe_unicode(result.Description)
-        if len(display_description) > MAX_DESCRIPTION:
+        if display_description and len(display_description) > MAX_DESCRIPTION:
             display_description = ''.join(
                 (display_description[:MAX_DESCRIPTION], '...'))
 
