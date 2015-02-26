@@ -268,7 +268,7 @@
 
                         <div tal:define="fview nocall: context/@@search-facets | nothing"
                              tal:condition="python: fview"
-                             tal:replace="structure python: fview(results=view.results)" />
+                             tal:replace="structure python: fview(results=view.results()._sequence._basesequence)" />
 
                         <metal:results tal:condition="batch"
                                        tal:define="isAnon context/@@plone_portal_state/anonymous;
