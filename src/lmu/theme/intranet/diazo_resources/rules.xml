@@ -10,9 +10,12 @@
         <!--
         <theme href="https://iukintest.zuv.uni-muenchen.de/index.html" />
         -->
-        <!--<theme href="http://cms-test-pm3.verwaltung.uni-muenchen.de:8080/prototyp-1/sp/index.html" if="not:$offline"/>-->
-        <theme href="theme.html" />
+        <rules if="$readnetwork">
+            <!--<theme href="https://iukintest.verwaltung.uni-muenchen.de/assets/index.html" if="$readnetwork"/>-->
+        </rules>
+        <theme href="theme.html" if-not="$readnetwork" />
         <notheme if="$ajax_load" />
+        <notheme if-path="/Plone/frontpage_view" />
 
         <!-- Replace title with Plone's page title  -->
         <replace css:theme="html head title" css:content="html head title" />
@@ -39,20 +42,21 @@
 
         <!-- Insert your own rules here -->
 
-        <!-- This rule pulls in the whole Plone layout. You'll typically replace this
-             with rules that copy particular parts of the content into particular
-             targets in your theme.
-         -->
-        <replace css:theme="#content-core" css:content-children="#content" />
-        
-        <replace css:theme-children='a[title="PROTOTYP 1"]' css:content-children="#user-name" />
+        <drop css:theme="#fake-above-content" if-not-path="/Plone/startseite" />
+        <drop css:theme="#fake-below-content" if-not-path="/Plone/startseite" />
 
-        <!--<replace css:theme="#content-core" href="http://localhost:8080/Plone/blog-mit/frontpage_view?omit=True" css:content-children="body"  />-->
+        <replace css:theme="#content-core" css:content="#blog-section" href="http://127.0.0.1:8080/Plone/blog-mit/frontpage_view" if-path="/Plone/startseite" />
+        <replace css:theme="#content" css:content-children="#content" if-not-path="/Plone/startseite"/>
+
+        <before css:theme="#content" css:content=".portalMessage" />
+        
+        <replace css:theme-children='#portal_username' css:content-children="#user-name" />
 
         <drop css:content="#breadcrumbs-you-are-here" />
         <drop css:content=".breadcrumbSeparator" />
         <replace css:theme-children=".sp-breadcrumb" css:content-children="#portal-breadcrumbs" />
         <strip css:content="#breadcrumbs-current" />
+        
     </rules>
 
 </rules>
