@@ -116,7 +116,7 @@ if not results:
             % ts.translate(label_no_results_found, context=REQUEST))
     write('''<div class="LSRow">''')
     write('<a href="%s" class="advancedsearchlink">%s</a>' %
-            (portal_url + '/@@search',
+            (portal_url + '/search',
             ts.translate(label_advanced_search, context=REQUEST)))
     write('''</div>''')
     write('''</div>''')
@@ -160,14 +160,14 @@ else:
 
     write('''<li class="LSRow">''')
     write('<a href="%s" class="advancedsearchlink advanced-search">%s</a>' %
-            (portal_url + '/@@search',
+            (portal_url + '/search',
             ts.translate(label_advanced_search, context=REQUEST)))
     write('''</li>''')
 
     if len(results) > limit:
         # add a more... row
         write('''<li class="LSRow">''')
-        searchquery = '@@search?SearchableText=%s&path=%s' \
+        searchquery = 'search?SearchableText=%s&path=%s' \
                         % (searchterms, params['path'])
         write('<a href="%s" class="advancedsearchlink show-all-items">%s</a>' % (
                              searchquery,
