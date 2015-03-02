@@ -1,186 +1,225 @@
 <!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en"> <![endif]-->
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZUV Serviceportal</title>
-    
-    <link rel="stylesheet" href="static/fonts/opensans_regular/stylesheet.css" type="text/css" />
-    <link rel="stylesheet" href="static/fonts/opensans_italic/stylesheet.css" type="text/css" />
-    <link rel="stylesheet" href="static/fonts/opensans_bold/stylesheet.css" type="text/css" />
-    <link rel="stylesheet" href="static/fonts/opensans_bolditalic/stylesheet.css" type="text/css" />
-    <link rel="stylesheet" href="static/fonts/opensans_semibold/stylesheet.css" type="text/css" />
-    <link rel="stylesheet" href="static/fonts/opensans_semibolditalic/stylesheet.css" type="text/css" />
 
-    <link rel="stylesheet" href="static/foundation/stylesheets/app.css">
-    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="fonts/opensans_regular/stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="fonts/opensans_italic/stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="fonts/opensans_bold/stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="fonts/opensans_bolditalic/stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="fonts/opensans_semibold/stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="fonts/opensans_semibolditalic/stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="fonts/noto-serif/noto-serif.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css" type="text/css" charset="utf-8"/>
+
+    <!-- If you are using the gem version, you need this only -->
+    <link rel="stylesheet" href="foundation/stylesheets/app.css">
 
 </head>
 <body>
 
-<header id="header">
+<div class="container">
 
-  <div class="row font-white siteheader-container">
+    <div id="header">
 
-    <div class="small-5 large-7 large-offset-1 columns siteheader">
+        <!-- SITEHEADER -->
 
+        <div class="row font-white siteheader-container">
+
+            <div class="small-9 medium-7 large-7 large-offset-1 columns siteheader siteheader-logo">
+                <a href="startseite.html"><img src="img/header-smartphone.png"
+                                               class="helper-no-resize hide-for-medium-up logo-small"/></a>
+            </div>
+
+            <div class="small-3 medium-5 large-3 end columns siteheader">
+                <a href="#" data-dropdown="drop1" class="button dropdown tiny right"><span style="font-size: 12px;"
+                                                                                           class="fi-torso"></span><span
+                        class="siteheader-name">&nbsp;&nbsp;eckhard.sedlmayer</span></a><br>
+                <ul id="drop1" data-dropdown-content class="f-dropdown">
+                    <li><a href="#">Benutzerkonto</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- / SITEHEADER -->
+
+        <!-- NAVIGATION -->
+        <div class="row mainnav-container">
+
+            <div class="small-12 large-10 large-centered columns">
+
+                <div class="search-nav right">
+                    <a class="search" href="#" id="togglesearch"><i class="fi-magnifying-glass"></i></a>
+                </div>
+
+                <div class="nav-container right hide-for-large-up">
+                    <a class="toggle" href="#" id="togglenav"><i class="fi-list"></i></a>
+                </div>
+
+                <div style="margin-right: 3%;">
+                    <nav class="top-bar mainnav" data-topbar>
+
+                        <ul class="title-area">
+                            <li class="name">
+                                <a href="startseite.html"><img src="img/header-desktop.png"
+                                                               class="no-resize show-for-medium-up"/></a>
+
+                                <h1 class="mainnav-title"><a href="startseite.html">Serviceportal<br/>der ZUV</a></h1>
+                            </li>
+                        </ul>
+
+                        <section class="top-bar-section">
+
+                            <!-- Right Nav Section -->
+
+                            <ul class="right">
+                                <li><a href="#">Aktuell</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Einrichtungen</a></li>
+                                <li><a href="#">Weiterbildung</a></li>
+                                <li><a href="#">Die ZUV</a></li>
+                            </ul>
+
+                        </section>
+
+                    </nav>
+                </div>
+
+            </div>
+
+            <!-- / NAVIGATION -->
+
+        </div>
+
+
+        <div style="height: 50px !important; overflow: hidden">
+            <!-- SUCHE -->
+
+            <div class="row font-white search-container">
+                <form>
+
+                    <div class=" small-12 large-10 large-centered columns search-form">
+
+                        <input name="SearchableText" type="text" placeholder="Was können wir für Sie tun?">
+
+                        <a href="#" class="button postfix "><i class="fi-magnifying-glass"></i></a>
+
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- / SUCHE -->
+
+
+            <!-- BREADCRUMB -->
+
+            <div class="row font-white breadcrumb-container">
+
+                <div class="small-12 large-10 large-centered columns breadcrumb">
+                    <a href="startseite.html"><i class="fi-home"></i></a>
+                    <a href="#">Service</a>
+                </div>
+
+            </div>
+
+            <!-- / BREADCRUMB -->
+        </div>
     </div>
 
-    <div class="small-7 large-3 end columns siteheader">
-      <a href="#" data-dropdown="drop1" class="button dropdown tiny right"><span style="font-size: 12px;"><i class="fi-torso"></i></span>&nbsp;&nbsp;eckhard.sedlmayer</a><br> 
-      <ul id="drop1" data-dropdown-content class="f-dropdown">
-        <li><a href="#">This is a link</a></li>
-        <li><a href="#">This is another</a></li>
-        <li><a href="#">Yet another</a></li>
-      </ul>
-    </div>
+    <div id="content">
 
-  </div>
 
-  <div class="row sp-mainnav-container">
+        <!-- INHALT -->
 
-    <div class="small-12 large-10 large-centered columns">
-
-      <div class="search-container right">
-        <a class="search" href="#" id="togglesearch"><i class="fi-magnifying-glass"></i></a>
-      </div>
-
-      <div class="nav-container right hide-for-large-up">
-        <a class="toggle" href="#" id="togglenav"><i class="fi-list"></i></a>
-      </div>
-
-      <div style="margin-right: 3%;">
-        <nav class="top-bar sp-mainnav" data-topbar>
-
-          <ul class="title-area">
-            <li class="name">
-              <img src="static/img/lmu-logo-50px.png" class="no-resize show-for-large-only" />
-              <img src="static/img/lmu-logo-30px.png" class="no-resize hide-for-large-up sp-logo-small" />
-            </li>
-          </ul>
-
-          <section class="top-bar-section">
-
-            <ul class="right">
-              <li><a href="#">Aktuell</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Einrichtungen</a></li>
-              <li><a href="#">Weiterbildung</a></li>
-              <li><a href="#">Die ZUV</a></li>
-              <li><a href="http://localhost:8080/Plone/blog-mit">Blog mit!</a></li>
-            </ul>
-
-          </section>
-            
-        </nav>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div style="height: 35px !important; overflow: hidden">
-
-    <div class="row font-white sp-search-container">
-      <form>
         <div class="row">
-          <div class=" small-12 large-6 large-offset-6 columns search-form">
-            <div class="row collapse" style="padding-left: 5px;">
-              <div class="small-11 columns">
-                <input type="text" placeholder="Was können wir für Sie tun?">
-              </div>
-              <div class="small-1 columns">
-                <a href="#" class="button postfix "><i class="fi-magnifying-glass"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
 
-    <div class="row font-white sp-breadcrumb-container">
-
-      <div class="small-12 large-10 large-centered columns sp-breadcrumb">
-        <a href="#"><i class="fi-home">Home</i></a> 
-        <a href="#">Unterebene 1</a>    
-        <a href="#">Seite</a>   
-      </div>
-
-    </div>
-  </div>
-
-</header>
-
-<main id="content">
-  <div class="row">
-    <div class="small-12 large-10 large-centered columns">
-
-      <div id="content-core">Content goes here</div>
-
-    </div>
-  </div>
-</main>
+            <div class="small-12 large-10 large-centered columns helper-margin-top-xl">
 
 
-<footer id="footer">
-
-  <div class="row footer helper-margin-top-xl">
-    <div class="small-12 large-10 large-centered columns">
-      <div class="row">
-        <div class="large-8 columns helper-margin-top-l">
-          <h4>ZUV Services - Häufig geklickt</h4>
-
-          <div class="row">
-
-            <div class="large-6 columns helper-margin-bottom-l">
-              <ul>
-                <li><a href="#">meine Forschungsergebnisse veröffentlichen</a></li>
-                <li><a href="#">Drittmittel beantragen und Informationen rund um die Verwaltung von Drittmitteln</a></li>
-                <li><a href="#">mein Budget verwalten</a></li>
-                <li><a href="#">eine Projektwebsite erstellen und hosten</a></li>
-              </ul>
+                <a href="#" class="right functions-top">nach oben</a>
             </div>
 
-            <div class="large-6 columns helper-margin-bottom-l">
-              <ul>
-                <li><a href="#">meine Forschungsergebnisse veröffentlichen</a></li>
-                <li><a href="#">Drittmittel beantragen und Informationen rund um die Verwaltung von Drittmitteln</a></li>
-                <li><a href="#">mein Budget verwalten</a></li>
-                <li><a href="#">eine Projektwebsite erstellen und hosten</a></li>
-              </ul>
-            </div>
-
-          </div>
         </div>
-
-        <div class="large-4 columns  helper-margin-bottom-l helper-margin-top-l">
-          <h4>Wir die ZUV</h4>
-          <img src="static/img/zuv.png" alt="ZUV-Leitbild" />
-        </div>
-
-      </div>
     </div>
-  </div>
+    <!-- / INHALT -->
 
-  <div class="row helper-margin-top-l">
-    <div class="small-3 small-centered columns helper-textalign-center">
-      <a href="#top"><img src="static/img/footer-top.png" alt="Nach oben" /></a>
-    <div>
-  </div>
 
-</footer>
+    <div id="footer">
 
-  <br />
+        <!-- FOOTER -->
 
-  <!--<script src="static/foundation/bower_components/jquery/dist/jquery.min.js"></script>-->
-  <script src="static/foundation/bower_components/foundation/js/foundation.min.js"></script>
-  <script src="static/foundation/js/app.js"></script>
-  <script src="static/foundation/bower_components/modernizr/modernizr.js"></script>
-  <script src="static/foundation/bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
+        <div class="row footer helper-margin-top-xl">
+            <div class="small-12 large-10 large-centered columns">
+                <div class="row helper-margin-bottom-l">
 
-  <script type="text/javascript" src="static/main.js"></script>
+                    <!-- HÄUFIG GEKLICKT -->
+
+                    <div class="medium-8 large-8 columns helper-margin-top-l">
+                        <h2 class="header-category">ZUV-Services - häufig geklickt</h2>
+
+                        <ul class="list-link">
+                            <a href="service_komplex.html">
+                                <li>Mittelverwaltung</li>
+                            </a>
+                            <a href="#">
+                                <li>Beschaffung von EDV-Geräten</li>
+                            </a>
+                            <a href="#">
+                                <li>Beantragung von Erholungsurlaub</li>
+                            </a>
+                            <a href="#">
+                                <li>Erstellen einer Webseite</li>
+                            </a>
+                            <a href="service.html">
+                                <li>Verfassen und Verbreiten von Pressemeldungen</li>
+                            </a>
+                        </ul>
+
+                    </div>
+
+                    <!-- / HÄUFIG GEKLICKT -->
+
+                    <!-- WIR -->
+
+                    <div class="medium-4 large-4 columns  helper-margin-bottom-l helper-margin-top-l">
+                        <h2 class="header-category">Wie wir uns verstehen</h2>
+                        <img src="bilder/zuv.png"/>
+                    </div>
+
+                    <!-- / WIR -->
+
+                </div>
+            </div>
+        </div>
+
+        <!-- / FOOTER -->
+
+        <!-- TOPLINK -->
+
+        <div class="row helper-margin-top-l">
+            <div class="small-3 small-centered columns helper-textalign-center">
+                <a href="#top"><img src="img/footer-top.png"/></a>
+                <!-- / TOPLINK -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="foundation/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="foundation/bower_components/foundation/js/foundation.min.js"></script>
+<script src="foundation/js/app.js"></script>
+<script src="foundation/bower_components/modernizr/modernizr.js"></script>
+<script src="foundation/bower_components/foundation/js/foundation/foundation.equalizer.js"></script>
+<script src="foundation/bower_components/foundation/js/foundation/foundation.reveal.js"></script>
 
 </body>
 </html>
