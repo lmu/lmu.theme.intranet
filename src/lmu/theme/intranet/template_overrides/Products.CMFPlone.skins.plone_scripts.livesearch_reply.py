@@ -36,7 +36,11 @@ MAX_DESCRIPTION = 150
 catalog = context.portal_catalog
 
 friendly_types = ploneUtils.getUserFriendlyTypes()
+if siteProperties is not None:
+    extra_types = siteProperties.getProperty('extra_types_searched', [])
+    friendly_types += extra_types
 
+context.plone_log(str(friendly_types))
 
 def quotestring(s):
     return '"%s"' % s
