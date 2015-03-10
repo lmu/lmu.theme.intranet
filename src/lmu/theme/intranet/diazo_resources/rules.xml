@@ -15,6 +15,7 @@
         </rules>
         <theme href="theme.html" if-not="$readnetwork" />
         <notheme if="$ajax_load" />
+        <notheme if-path="/livesearch_reply" />
         <notheme if-path="/Plone/frontpage_view" />
 
         <!-- Replace title with Plone's page title  -->
