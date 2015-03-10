@@ -7,16 +7,12 @@
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
 
-        <!--
-        <theme href="https://iukintest.zuv.uni-muenchen.de/index.html" />
-        -->
-        <rules if="$readnetwork">
-            <!--<theme href="https://iukintest.verwaltung.uni-muenchen.de/assets/index.html" if="$readnetwork"/>-->
-        </rules>
-        <theme href="theme.html" if-not="$readnetwork" />
+        <theme href="https://iukintest.verwaltung.uni-muenchen.de/assets/index.html"/>
+        
         <notheme if="$ajax_load" />
         <notheme if-path="/livesearch_reply" />
         <notheme if-path="/Plone/frontpage_view" />
+        <notheme if-path="frontpage_view" />
 
         <!-- Replace title with Plone's page title  -->
         <replace css:theme="html head title" css:content="html head title" />
@@ -42,10 +38,6 @@
         <!--<after css:theme-children="html body" css:content="html body script" method="raw" />-->
 
         <!-- Insert your own rules here -->
-
-        <drop css:theme="#fake-above-content" if-not-path="/Plone/startseite" />
-        <drop css:theme="#fake-below-content" if-not-path="/Plone/startseite" />
-
         <replace css:theme="#content-core" css:content="#blog-section" href="http://127.0.0.1:8080/Plone/blog-mit/frontpage_view" if-path="/Plone/startseite" />
         <replace css:theme="#content" css:content-children="#content" if-not-path="/Plone/startseite"/>
 
