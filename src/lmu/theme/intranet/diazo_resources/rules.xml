@@ -7,8 +7,10 @@
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
 
-        <theme href="https://iukintest.verwaltung.uni-muenchen.de/assets/index.html"/>
+        <theme href="https://iukintest.verwaltung.uni-muenchen.de/assets/index.html" if="$domain = 'iukintest.verwaltung.uni-muenchen.de'" />
         
+        <theme href="https://iuksptest.verwaltung.uni-muenchen.de/_assets/index.html" if="$domain = 'iuksptest.verwaltung.uni-muenchen.de'" />
+<!--        <theme href="theme.html" /> -->        
         <notheme if="$ajax_load" />
         <notheme if-path="/livesearch_reply" />
         <notheme if-path="/Plone/frontpage_view" />
@@ -43,7 +45,7 @@
 
         <before css:theme="#content" css:content=".portalMessage" />
         
-        <replace css:theme-children='#portal_username' css:content-children="#user-name" />
+        <replace css:theme-children=".siteheader-name" css:content-children="#user-name" />
 
         <drop css:content="#breadcrumbs-you-are-here" />
         <drop css:content=".breadcrumbSeparator" />
