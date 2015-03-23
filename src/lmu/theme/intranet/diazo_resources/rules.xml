@@ -7,7 +7,7 @@
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
 
-        <theme href="https://iukintest.verwaltung.uni-muenchen.de/assets/index.html" if="$domain = 'iukintest.verwaltung.uni-muenchen.de'" />
+        <theme href="https://iukintest.verwaltung.uni-muenchen.de/_assets/index.html" if="$domain = 'iukintest.verwaltung.uni-muenchen.de'" />
         
         <theme href="https://iuksptest.verwaltung.uni-muenchen.de/_assets/index.html" if="$domain = 'iuksptest.verwaltung.uni-muenchen.de'" />
 <!--        <theme href="theme.html" /> -->        
@@ -41,7 +41,7 @@
 
         <!-- Insert your own rules here -->
         <replace css:theme="#content-core" css:content="#blog-section" href="http://127.0.0.1:8080/Plone/blog-mit/frontpage_view" if-path="/Plone/startseite" />
-        <replace css:theme="#content" css:content-children="#content" if-not-path="/Plone/startseite"/>
+        <replace css:theme="#content" css:content="#content" if-not-path="/Plone/startseite"/>
 
         <before css:theme="#content" css:content=".portalMessage" />
         
