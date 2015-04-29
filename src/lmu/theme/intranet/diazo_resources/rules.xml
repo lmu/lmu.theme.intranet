@@ -6,11 +6,10 @@
 
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
-
-        <theme href="https://iukintest.verwaltung.uni-muenchen.de/_assets/index.html" if="$domain = 'iukintest.verwaltung.uni-muenchen.de'" />
-        
-        <theme href="https://iuksptest.verwaltung.uni-muenchen.de/_assets/index.html" if="$domain = 'iuksptest.verwaltung.uni-muenchen.de'" />
-<!--        <theme href="theme.html" /> -->        
+<!-- 
+        <theme href="https://iukintest.verwaltung.uni-muenchen.de/_assets/index.html" />
+-->
+        <theme href="theme.html" /> 
         <notheme if="$ajax_load" />
         <notheme if-path="/livesearch_reply" />
         <notheme if-path="/Plone/frontpage_view" />

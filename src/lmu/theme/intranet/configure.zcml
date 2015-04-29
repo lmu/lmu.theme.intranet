@@ -6,24 +6,25 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="lmu">
 
-  <i18n:registerTranslations directory="locales" />
+    <i18n:registerTranslations directory="locales" />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="LMU Theme for ZUV-Intranet"
-      directory="profiles/default"
-      description="Extension profile for LMU Theme for ZUV-Intranet"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    <genericsetup:registerProfile
+        name="default"
+        title="LMU Theme for ZUV-Intranet"
+        directory="profiles/default"
+        description="Extension profile for LMU Theme for ZUV-Intranet"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
 
-  <plone:static
-    directory="diazo_resources"
-    type="theme"
-    />
+    <plone:static
+        name="lmu.theme.intranet"
+        directory="diazo_resources"
+        type="theme"
+        />
 
-  <browser:jbot
-      directory="template_overrides"
-      layer=".interfaces.ILMUIntranetTheme"
-      />
+    <browser:jbot
+        directory="template_overrides"
+        layer=".interfaces.ILMUIntranetTheme"
+        />
 
 </configure>
