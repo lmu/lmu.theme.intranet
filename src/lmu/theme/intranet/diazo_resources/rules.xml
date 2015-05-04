@@ -11,9 +11,7 @@
 -->
         <theme href="theme.html" /> 
         <notheme if="$ajax_load" />
-        <notheme if-path="/livesearch_reply" />
-        <notheme if-path="/Plone/frontpage_view" />
-        <notheme if-path="frontpage_view" />
+        <notheme if="contains($path, '*.include')" />
 
         <!-- Replace title with Plone's page title  -->
         <replace css:theme="html head title" css:content="html head title" />
