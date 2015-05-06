@@ -17,14 +17,14 @@
         <replace css:theme="html head title" css:content="html head title" />
 
         <!-- Copy base tag from Plone -->
-        <before css:theme-children="html head" css:content="html head base" />
-        <before css:theme-children="html head"
+        <before css:theme-children="html head title" css:content="html head base" />
+        <before css:theme-children="html head title"
                content="/html/head/link | /html/head/script | /html/head/style" />
         <!-- Copy link, style, meta tags from Plone head -->
         <!--<after css:theme-children="html head"
                content="/html/head/link | /html/head/style | /html/head/meta" />-->
-        <after css:theme-children="html head"
-               content="/html/head/meta" />
+        <before css:theme-children="html head" content="/html/head/meta" />
+        <drop css:theme="html head meta[name=generator]" />
 
         <!-- merge classes from Plone body with theme body -->
         <merge attributes="class" css:theme="body" css:content="body" />
@@ -37,8 +37,8 @@
         <!--<after css:theme-children="html body" css:content="html body script" method="raw" />-->
 
         <!-- Insert your own rules here -->
-        <replace css:theme="#content" css:content="#main" />
-        <before css:theme="#content" css:content=".portalMessage" />
+        <replace css:theme="#content" css:content="#content" />
+        <replace css:theme="#portalmessage" css:content=".portalMessage" />
         
         <replace css:theme-children=".siteheader-name" css:content-children="#user-name" />
 

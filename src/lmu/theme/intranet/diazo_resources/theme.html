@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZUV Serviceportal</title>
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/fonts/opensans_regular/stylesheet.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/fonts/opensans_italic/stylesheet.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/fonts/opensans_bold/stylesheet.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/fonts/opensans_bolditalic/stylesheet.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/fonts/opensans_semibold/stylesheet.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/fonts/opensans_semibolditalic/stylesheet.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/fonts/foundation-icons/foundation-icons.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/fonts/noto-serif/noto-serif.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_regular/stylesheet.css" type="text/css" >
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_italic/stylesheet.css" type="text/css" >
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_bold/stylesheet.css" type="text/css" >
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_bolditalic/stylesheet.css" type="text/css" >
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_semibold/stylesheet.css" type="text/css" >
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/opensans_semibolditalic/stylesheet.css" type="text/css" >
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/foundation-icons/foundation-icons.css" type="text/css" >
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/fonts/noto-serif/noto-serif.css" type="text/css" >
     <!-- If you are using the gem version, you need this only -->
-    <link rel="stylesheet" href="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/css/foundation/app.css">
+    <link rel="stylesheet" href="http://cms-static.uni-muenchen.de/default/foundation-zuv/css/foundation/app.css">
     </head>
     <body>
         <div class="container">
@@ -25,8 +25,11 @@
         <a href="/index.html" title="Intranet der ZUV"><img src="https://iukintest.verwaltung.uni-muenchen.de/_assets/header-smartphone.png" class="helper-no-resize hide-for-medium-up logo-small" alt="header-smartphone"></a>
     </div>
     <div class="small-3 medium-5 large-3 end columns siteheader">
-        <a href="/index.html" data-dropdown="drop1" class="button dropdown tiny right" title="PROTOTYP 1"><span style="font-size: 12px;" class="fi-torso"></span>
-                <span class="siteheader-name helper-margin-left-s">Sie sind nicht angemeldet</span></a><br> 
+        <a id="siteheader-person" href="/index.html" data-dropdown="drop1" class="button dropdown tiny right" title="PROTOTYP 1">
+            <span style="font-size: 12px;" class="fi-torso"></span>
+            <span class="siteheader-name helper-margin-left-s">Sie sind nicht angemeldet</span>
+        </a>
+        <br /> 
     <ul id="drop1" data-dropdown-content class="f-dropdown">
         <li><a href="/index">Benutzerkonto</a></li>
         <li><a href="/index.html">Logout</a></li>
@@ -48,8 +51,10 @@
         <nav class="top-bar mainnav" data-topbar>
         <ul class="title-area">
             <li class="name">
-            <a href="/index.html" title="Intranet der ZUV"><img src="https://iukintest.verwaltung.uni-muenchen.de/_assets/header-desktop-in.png" class="no-resize show-for-medium-up" alt="header-desktop"></a>
-            <h1 class="mainnav-title"><a>Intranet<br>der ZUV</a></h1>
+                <a href="/index.html" title="Intranet der ZUV">
+                    <img src="https://iukintest.verwaltung.uni-muenchen.de/_assets/header-desktop-in.png" class="no-resize show-for-medium-up" alt="header-desktop" />
+                </a>
+                <h1 class="mainnav-title"><a>Intranet<br>der ZUV</a></h1>
             </li>
         </ul>
         <section class="top-bar-section">
@@ -120,13 +125,13 @@
 </div>
     </div>
 </div>
-<main id="content">
-    <div id="portalmessagecontainer" class="row hide">
-        <div id="portalmessage" class="small-12 large-10 large-centered columns helper-margin-top-l">
-            <div data-alert class="alert-box"></div>
-        </div>
+<div id="portalmessagecontainer" class="row hide">
+    <div id="portalmessage" class="small-12 large-10 large-centered columns helper-margin-top-l">
+        <div data-alert class="alert-box"></div>
     </div>
-        Layout fehlt: t3_content_zuv_assets_container
+</div>
+<main id="content">
+        Content
 </main>
 <footer id="footer">
     <!-- FOOTER -->
@@ -204,21 +209,21 @@
     <!-- TOPLINK -->
     <div class="row helper-margin-top-l">
         <div class="small-3 small-centered columns helper-textalign-center">
-            <a href="#top"><img src="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/img/footer-top.png" alt="footer-top"></a>
+            <a href="#top"><img src="http://cms-static.uni-muenchen.de/default/foundation-zuv/img/footer-top.png" alt="footer-top"></a>
         <div>
     </div>
     <!-- / TOPLINK -->
 <!-- / FOOTER -->
-<br>
+<br />
 </footer>
-<script src="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/js/jquery_min.js"></script>
-<script src="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/js/foundation_min.js"></script>
-<script src="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/js/app.js"></script>
-<script src="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/js/modernizr.js"></script>
-<script src="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/js/foundation_equalizer.js"></script>
-<script src="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/js/foundation_reveal.js"></script>
-<script src="https://iukintest.verwaltung.uni-muenchen.de/system/assets/foundation-zuv/js/foundation_orbit.js"></script>
-<script src="https://iukintest.verwaltung.uni-muenchen.de/functions/livesearch.js"></script>
+<script src="http://cms-static.uni-muenchen.de/default/foundation-zuv/js/modernizr.js"></script>
+<script src="http://cms-static.uni-muenchen.de/default/foundation-zuv/js/jquery_min.js"></script>
+<script src="http://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_min.js"></script>
+<script src="http://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_equalizer.js"></script>
+<script src="http://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_reveal.js"></script>
+<script src="http://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_orbit.js"></script>
+<script src="http://cms-static.uni-muenchen.de/default/foundation-zuv/js/app.js"></script>
+<!--<script src="/intranet/livesearch.js"></script>-->
         </div>
     </body>
 </html>
