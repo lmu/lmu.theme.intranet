@@ -23,4 +23,12 @@
     cacheable="False" compression="safe" cookable="False"
     enabled="True" expression=""  inline="False" />
  -->
+    <javascript 
+        cacheable="True"
+        compression="safe"
+        cookable="True"
+        enabled="True"
+        expression="request/HTTP_X_THEME_ENABLED | nothing"
+        id="++resource++lmu.theme.intranet.js/extras.js"
+        inline="False"/>
 </object>

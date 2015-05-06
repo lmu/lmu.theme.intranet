@@ -58,4 +58,15 @@
     <stylesheet title=""
         id="mobile.css"
         expression="not: request/HTTP_X_THEME_ENABLED | nothing" />
+
+    <stylesheet title=""
+        id="++resource++lmu.theme.intranet.css/extras.css"
+        media="screen"
+        rel="stylesheet"
+        rendering="import"
+        cacheable="False"
+        compression="safe"
+        cookable="False"
+        enabled="1"
+        expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 </object>

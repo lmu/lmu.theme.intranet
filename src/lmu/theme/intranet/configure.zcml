@@ -22,6 +22,18 @@
         type="theme"
         />
 
+    <browser:resourceDirectory
+        name="lmu.theme.intranet.css"
+        directory="css"
+        layer=".interfaces.ILMUIntranetTheme"
+        />
+
+    <browser:resourceDirectory
+        name="lmu.theme.intranet.js"
+        directory="js"
+        layer=".interfaces.ILMUIntranetTheme"
+        />
+
     <browser:jbot
         directory="template_overrides"
         layer=".interfaces.ILMUIntranetTheme"
