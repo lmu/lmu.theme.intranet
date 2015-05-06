@@ -18,8 +18,14 @@
 
         <!-- Copy base tag from Plone -->
         <before css:theme-children="html head title" css:content="html head base" />
-        <before css:theme-children="html head title"
-               content="/html/head/link | /html/head/script | /html/head/style" />
+        <before css:theme-="html head title"
+                content="/html/head/link | /html/head/script | /html/head/style" />
+        <before css:theme="html head title"
+                css:content="html head link " />
+        <before css:theme="html head title"
+                css:content="html head style " />
+        <append css:theme="html body #lmujs"
+                css:content="html head script" />
         <!-- Copy link, style, meta tags from Plone head -->
         <!--<after css:theme-children="html head"
                content="/html/head/link | /html/head/style | /html/head/meta" />-->

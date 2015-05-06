@@ -1,1 +1,6 @@
 /* extras.css */
+
+figure.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
