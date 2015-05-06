@@ -34,6 +34,7 @@
 
         <!-- merge classes from Plone body with theme body -->
         <merge attributes="class" css:theme="body" css:content="body" />
+        <replace attributes="action" css:theme="form#livesearch0" >{$portal_url}/search</replace>
 
         <!-- Copy script tags from Plone head to end of body -->
         <!--<after css:theme-children="html body" css:content="html head script" />-->
@@ -46,6 +47,7 @@
         <replace css:theme="#content" css:content="#content" />
         <replace css:theme="#portalmessage" css:content=".portalMessage" />
         
+        <replace css:theme-children="#siteheader-person" css:content-children="#user" href="/intranet/user_info.include" />
         <replace css:theme-children=".siteheader-name" css:content-children="#user-name" />
 
         <drop css:content="#breadcrumbs-you-are-here" />

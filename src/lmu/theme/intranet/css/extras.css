@@ -4,3 +4,8 @@ figure.centered {
     margin-left: auto;
     margin-right: auto;
 }
+
+#siteheader-person > img {
+    height: 30px;
+    width: auto;
+}
