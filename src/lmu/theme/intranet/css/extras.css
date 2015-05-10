@@ -9,3 +9,12 @@ figure.centered {
     height: 30px;
     width: auto;
 }
+
+div.fieldTextFormat,
+div#formfield-form-widgets-IVersionable-changeNote {
+    display: none;
+}
+
+input[type="text"] {
+    height: 100% !important;
+}
