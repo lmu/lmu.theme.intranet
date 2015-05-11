@@ -10,6 +10,15 @@ figure.centered {
     width: auto;
 }
 
+div.commentImage {
+    overflow: hidden;
+}
+
+div.commentImage img {
+    height: 3.5em;
+    width: auto;
+}
+
 div.fieldTextFormat,
 div#formfield-form-widgets-IVersionable-changeNote {
     display: none;
