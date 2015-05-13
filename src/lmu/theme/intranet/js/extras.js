@@ -1,5 +1,9 @@
 /* extras.js */
 
+$.ajax({cache: false});
+$.ajaxSetup({cache: false});
+
+
 $("#pinnwand").load("https://iukintest.verwaltung.uni-muenchen.de/functions/pinnwand/frontpage_view.include");
 
 if ($("#blog-person").length > 0) {

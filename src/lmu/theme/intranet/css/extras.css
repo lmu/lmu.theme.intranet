@@ -12,6 +12,7 @@ figure.centered {
 
 div.commentImage {
     overflow: hidden;
+    display: none;
 }
 
 div.commentImage img {
@@ -26,4 +27,13 @@ div#formfield-form-widgets-IVersionable-changeNote {
 
 input[type="text"] {
     height: 100% !important;
+}
+
+#pinnwand-main .row {
+    padding-top: 2.5em;
+}
+
+.pinnwand_type_preview {
+    font-size: 120%;
+    color: #111;
 }
