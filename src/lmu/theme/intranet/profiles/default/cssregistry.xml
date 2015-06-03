@@ -56,6 +56,22 @@
         expression="not: request/HTTP_X_THEME_ENABLED | nothing" />
 
     <stylesheet title=""
+        id="controlpanel.css"
+        expression="not: request/HTTP_X_THEME_ENABLED | nothing" />
+
+    <stylesheet title=""
+        id="deprecated.css"
+        expression="not: request/HTTP_X_THEME_ENABLED | nothing" />
+
+    <stylesheet title=""
+        id="forms.css"
+        expression="not: request/HTTP_X_THEME_ENABLED | nothing" />
+
+    <stylesheet title=""
+        id="++resource++plone.app.discussion.stylesheets/discussion.css"
+        expression="not: request/HTTP_X_THEME_ENABLED | nothing" />
+
+    <stylesheet title=""
         id="mobile.css"
         expression="not: request/HTTP_X_THEME_ENABLED | nothing" />
 
