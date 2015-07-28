@@ -41,8 +41,8 @@
     <!-- NAVIGATION -->
 <div class="row mainnav-container">
     <div class="small-12 large-10 large-centered columns">
-        <div class="search-nav right">
-            <span class="search" id="togglesearch" title="Suche"><i class="fi-magnifying-glass"></i></span>
+        <div class="search-nav right active">
+            <span class="search" id="togglesearch" title="Suche"><i class="fi-magnifying-glass fi-x"></i></span>
         </div>
         <div class="nav-container right hide-for-large-up">
             <span class="toggle" id="togglenav" title="Navigation"><i class="fi-list"></i></span>
@@ -99,9 +99,9 @@
 <!-- / NAVIGATION -->
 </header>
 <div style="position: relative;">
-    <div style="height: 50px !important; overflow: hidden">
- <form action="/functions/search" id="livesearch0">
-    <div class="row font-white search-container">
+<div id="sb-container" >
+  <form action="/functions/search" id="livesearch0">
+    <div id="search-container" class="row font-white search-container" style="display: block; position: relative;">
         <div class=" small-12 large-10 large-centered columns search-form">
             <input id="quicksearch" type="text" name="SearchableText" type="text" placeholder="Wonach suchen Sie?">
             <a href="/index.html" class="button postfix " title="Serviceportal der ZUV"><i class="fi-magnifying-glass"></i></a>
@@ -114,16 +114,16 @@
         </div>
         <!-- /LIVESEARCH -->
     </div>
- </form>
-<div class="row font-white breadcrumb-container">
+  </form>
+  <div id="breadcrumb-container" class="row font-white breadcrumb-container">
     <div class="small-12 large-10 large-centered columns breadcrumb">
         <a href="/index.html" title="Intranet der ZUV"><i class="fi-home"></i></a>
                 <span class="active">
                         Blog Mit!
                 </span>
     </div>
+  </div>
 </div>
-    </div>
 </div>
 <div id="portalmessagecontainer" class="row hide">
     <div id="portalmessage" class="small-12 large-10 large-centered columns helper-margin-top-l">
@@ -205,6 +205,13 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row helper-margin-top-s">
+      <div class="small-12 large-10 large-centered columns text-center">
+        <small>
+          <a title="Impressum">Impressum</a> | <a title="Datenschutz">Datenschutz</a>
+        </small>
+      </div>
     </div>
     <!-- TOPLINK -->
     <div class="row helper-margin-top-l">

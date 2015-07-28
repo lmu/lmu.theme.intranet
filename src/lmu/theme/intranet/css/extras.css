@@ -49,3 +49,36 @@ i.* {
     position: absolute !important;
     width: 1px;
 }
+
+fieldset#search-field legend {
+    font-size: 130%;
+}
+
+fieldset#search-field input,
+fieldset#search-field button {
+    display: inline-block;
+    height: 2.41667rem;
+
+}
+
+fieldset#search-field input[type="text"] {
+    width: calc(100% - 45px);
+
+}
+
+fieldset#search-field input.searchButton,
+fieldset#search-field button.searchButton {
+    background-color: #007633;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    width: 40px;
+}
+
+.highlightedSearchTerm {
+    font-weight: bold;
+    background-color: yellow;
+    padding-right: 3px;
+    padding-left: 3px;
+}
