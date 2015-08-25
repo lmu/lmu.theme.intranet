@@ -24,11 +24,8 @@
                 css:content="html head link " />
         <before css:theme="html head title"
                 css:content="html head style " />
-        <after css:theme="html body #lmujs"
-                css:content="html head script" />
-        <after css:theme="html body #lmujs"
-                css:content="html body script" method="raw"/>
-        <drop css:content="html body script" />
+        <before css:theme="html head title"
+                css:content="html head script " />
         <!-- Copy link, style, meta tags from Plone head -->
         <!--<after css:theme-children="html head"
                content="/html/head/link | /html/head/style | /html/head/meta" />-->
