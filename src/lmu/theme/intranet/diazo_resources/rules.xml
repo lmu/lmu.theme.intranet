@@ -24,8 +24,8 @@
                 css:content="html head link " />
         <before css:theme="html head title"
                 css:content="html head style " />
-        <before css:theme="html head title"
-                css:content="html head script " />
+        <after css:theme="#lmujs"
+                css:content="script" method="raw" />
         <!-- Copy link, style, meta tags from Plone head -->
         <!--<after css:theme-children="html head"
                content="/html/head/link | /html/head/style | /html/head/meta" />-->
