@@ -24,9 +24,9 @@
                 css:content="html head link " />
         <before css:theme="html head title"
                 css:content="html head style " />
-        <after css:theme="html body #lmujs"
+        <append css:theme="html body #footer-js-slot"
                 css:content="html head script" />
-        <after css:theme="html body #lmujs"
+        <append css:theme="html body #footer-js-slot"
                 css:content="html body script" method="raw"/>
         <drop css:content="html body script" />
         <!-- Copy link, style, meta tags from Plone head -->

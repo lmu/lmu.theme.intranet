@@ -83,3 +83,51 @@ fieldset#search-field button.searchButton {
     padding-right: 3px;
     padding-left: 3px;
 }
+
+.formHelp {
+    border-color: #007633;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 5px;
+
+}
+
+div.field label {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+div.field span.required:after {
+    color: #007633;
+    font-weight: bold;
+    padding: 0;
+    content: "*";
+}
+
+div.field.row {
+    margin-bottom: 0.5em;
+}
+
+div.field small.error {
+    margin-bottom: 0;
+}
+
+div.field input,
+div.field textarea {
+    background-color: #fafafa;
+}
+
+ul.list-link-white li {
+    display: block;
+    background-image: none;
+    padding: 0 !important;
+}
+
+ul.list-link-white li a {
+    display: block;
+    background: rgba(0, 0, 0, 0) url("../../img/bg-arrow-white.png") no-repeat scroll right center;
+    padding: 10px 20px 10px 0;
+}
