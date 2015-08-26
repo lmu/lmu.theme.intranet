@@ -131,3 +131,30 @@ ul.list-link-white li a {
     background: rgba(0, 0, 0, 0) url("../../img/bg-arrow-white.png") no-repeat scroll right center;
     padding: 10px 20px 10px 0;
 }
+
+#content ul.image-previews li {
+    display: inline;
+}
+.qq-uploader {
+    outline: dotted 1px;
+}
+.content-items {
+    outline: solid 1px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 49.5%;
+    height: 100%;
+    float: left;
+}
+#images {
+    margin-right: 1%;
+}
+.formControls {
+    clear: both;
+}
+
+/* overlays */
+.overlay {
+    background-color: white;
+}
