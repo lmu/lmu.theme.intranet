@@ -120,6 +120,30 @@ div.field textarea {
     background-color: #fafafa;
 }
 
+div.field a.formHelpToggle {
+    width: 25px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+div.field input[type="text"],
+div.field input[type="password"],
+div.field input[type="date"],
+div.field input[type="datetime"],
+div.field input[type="datetime-local"],
+div.field input[type="month"],
+div.field input[type="week"],
+div.field input[type="email"],
+div.field input[type="number"],
+div.field input[type="search"],
+div.field input[type="tel"],
+div.field input[type="time"],
+div.field input[type="url"],
+div.field textarea,
+div.field div.richTextWidget {
+    width: calc(100% - 35px);
+}
+
 ul.list-link-white li {
     display: block;
     background-image: none;
