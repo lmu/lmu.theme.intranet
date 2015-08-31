@@ -140,7 +140,8 @@ div.field input[type="tel"],
 div.field input[type="time"],
 div.field input[type="url"],
 div.field textarea,
-div.field div.richTextWidget {
+div.field div.richTextWidget,
+div.field div.named-image-widget {
     width: calc(100% - 35px);
 }
 
