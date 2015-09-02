@@ -156,7 +156,18 @@ ul.list-link-white li a {
     padding: 10px 20px 10px 0;
 }
 
-#content ul.image-previews li {
+/* blog/pinnwand edit form */
+#content ul.previews {
+    margin-left: 0;
+}
+#content ul.previews li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+ul.functions {
+    margin-left: 0;
+}
+ul.functions li {
     display: inline;
 }
 .qq-uploader {
@@ -179,6 +190,31 @@ ul.list-link-white li a {
 }
 
 /* overlays */
-.overlay {
-    background-color: white;
+.pb-ajax, .pb-image, .overlay iframe {
+    background-color: #fff;
+    border: 1px solid #999;
+    white-space: normal;
+    box-shadow: 0 0 3em 0.5em #666;
+    -moz-box-shadow: 0 0 3em 0.5em #666;
+    -webkit-box-shadow: 0 0 3em #666;
+}
+div.overlaybg div.close, div.overlay div.close {
+    background-image: url("../pb_close.png");
+    position: absolute;
+    left: -14px;
+    top: -14px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.hiddenStructure {
+    display: block;
+    background: transparent;
+    background-image: none;
+    border: none;
+    height: 0.1em;
+    overflow: hidden;
+    padding: 0;
+    margin: -0.1em 0 0 -0.1em;
+    width: 1px;
 }
