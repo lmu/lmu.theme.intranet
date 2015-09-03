@@ -157,6 +157,32 @@ ul.list-link-white li a {
 }
 
 /* blog/pinnwand edit form */
+.portaltype-blog-entry .ploneSkin .mceButton {
+    width: 40px;
+    height: 40px;
+}
+.portaltype-blog-entry .ploneSkin .mceIcon {
+    width: 40px;
+    height: 40px;
+}
+.portaltype-blog-entry .ploneSkin span.mceIcon {
+    background-size: 2000px 120px;
+}
+.portaltype-blog-entry .ploneSkin span.mce_italic {
+    background-position: -120px 0;
+}
+.portaltype-blog-entry .ploneSkin span.mce_numlist {
+    background-position: -160px 0;
+}
+.portaltype-blog-entry .ploneSkin span.mce_bullist {
+    background-position: -40px 0;
+}
+.portaltype-blog-entry .ploneSkin span.mce_link {
+    background-position: -1000px 0;
+}
+.portaltype-blog-entry .ploneSkin span.mce_unlink {
+    background-position: -1280px 0;
+}
 #content ul.previews {
     margin-left: 0;
 }
