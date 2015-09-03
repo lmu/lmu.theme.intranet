@@ -11,9 +11,9 @@ if ($("#blog-person").length > 0) {
     $("#blog-person").load("https://iukintest.verwaltung.uni-muenchen.de/functions/blog-mit/frontpage_view.include?author="+ck);
 }
 
-$("input#form-buttons-save").addClass("button small")
-$("input#form-buttons-cancel").addClass("button small")
-$("input#form-buttons-comment").addClass("button small")
+$("input#form-buttons-save").addClass("button radius small")
+$("input#form-buttons-cancel").addClass("button radius small")
+$("input#form-buttons-comment").addClass("button radius small")
 /* 
 $("input#form-widgets-ILeadImage-image-input").addClass("button small")
 */

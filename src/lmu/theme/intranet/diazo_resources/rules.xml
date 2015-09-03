@@ -24,8 +24,8 @@
                 css:content="html head link " />
         <before css:theme="html head title"
                 css:content="html head style " />
-        <after css:theme="#lmujs"
-                css:content="script" method="raw" />
+        <append css:theme="#footer-js-slot"
+                css:content="script" method="raw"/>
         <!-- Copy link, style, meta tags from Plone head -->
         <!--<after css:theme-children="html head"
                content="/html/head/link | /html/head/style | /html/head/meta" />-->
@@ -34,7 +34,9 @@
 
         <!-- merge classes from Plone body with theme body -->
         <merge attributes="class" css:theme="body" css:content="body" />
-        <replace attributes="action" css:theme="form#livesearch0" >{$portal_url}/search</replace>
+        <replace attributes="action" css:theme="form#livesearch0" >
+            <form action="${portal_url}/search" />
+        </replace>
 
         <!-- Copy script tags from Plone head to end of body -->
         <!--<after css:theme-children="html body" css:content="html head script" />-->
@@ -47,7 +49,7 @@
         <replace css:theme="#content" css:content="#content" />
         <replace css:theme="#portalmessage" css:content=".portalMessage" />
         
-        <replace css:theme-children="#siteheader-person" css:content-children="#user" href="${portal_url}/user_info.include" method="document" />
+        <replace css:theme-children="#siteheader-person" css:content-children="#user" href="/user_info.include" method="document" />
         <replace css:theme-children=".siteheader-name" css:content-children="#user-name" />
 
         <drop css:content=".breadcrumbSeparator" />

@@ -83,3 +83,138 @@ fieldset#search-field button.searchButton {
     padding-right: 3px;
     padding-left: 3px;
 }
+
+.formHelp {
+    border-color: #007633;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 5px;
+
+}
+
+div.field label {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+div.field span.required:after {
+    color: #007633;
+    font-weight: bold;
+    padding: 0;
+    content: "*";
+}
+
+div.field.row {
+    margin-bottom: 0.5em;
+}
+
+div.field small.error {
+    margin-bottom: 0;
+}
+
+div.field input,
+div.field textarea {
+    background-color: #fafafa;
+}
+
+div.field a.formHelpToggle {
+    width: 25px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+div.field input[type="text"],
+div.field input[type="password"],
+div.field input[type="date"],
+div.field input[type="datetime"],
+div.field input[type="datetime-local"],
+div.field input[type="month"],
+div.field input[type="week"],
+div.field input[type="email"],
+div.field input[type="number"],
+div.field input[type="search"],
+div.field input[type="tel"],
+div.field input[type="time"],
+div.field input[type="url"],
+div.field textarea,
+div.field div.richTextWidget {
+    width: calc(100% - 35px);
+}
+
+ul.list-link-white li {
+    display: block;
+    background-image: none;
+    padding: 0 !important;
+}
+
+ul.list-link-white li a {
+    display: block;
+    background: rgba(0, 0, 0, 0) url("../../img/bg-arrow-white.png") no-repeat scroll right center;
+    padding: 10px 20px 10px 0;
+}
+
+/* blog/pinnwand edit form */
+#content ul.previews {
+    margin-left: 0;
+}
+#content ul.previews li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+ul.functions {
+    margin-left: 0;
+}
+ul.functions li {
+    display: inline;
+}
+.qq-uploader {
+    outline: dotted 1px;
+}
+.content-items {
+    outline: solid 1px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 49.5%;
+    height: 100%;
+    float: left;
+}
+#images {
+    margin-right: 1%;
+}
+.formControls {
+    clear: both;
+}
+
+/* overlays */
+.pb-ajax, .pb-image, .overlay iframe {
+    background-color: #fff;
+    border: 1px solid #999;
+    white-space: normal;
+    box-shadow: 0 0 3em 0.5em #666;
+    -moz-box-shadow: 0 0 3em 0.5em #666;
+    -webkit-box-shadow: 0 0 3em #666;
+}
+div.overlaybg div.close, div.overlay div.close {
+    background-image: url("../pb_close.png");
+    position: absolute;
+    left: -14px;
+    top: -14px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.hiddenStructure {
+    display: block;
+    background: transparent;
+    background-image: none;
+    border: none;
+    height: 0.1em;
+    overflow: hidden;
+    padding: 0;
+    margin: -0.1em 0 0 -0.1em;
+    width: 1px;
+}
