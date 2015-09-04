@@ -250,3 +250,10 @@ div.overlaybg div.close, div.overlay div.close {
     margin: -0.1em 0 0 -0.1em;
     width: 1px;
 }
+
+/* blog listing */
+#blog-main a.link-overlay {
+    cursor: -moz-zoom-in;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
