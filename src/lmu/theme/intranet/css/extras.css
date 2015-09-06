@@ -224,3 +224,8 @@ div.overlaybg div.close, div.overlay div.close {
     background-color: inherit;
     border: none;
 }
+.icons-on .contenttype-collection {
+    line-height: inherit;
+    padding-left: 26px !important;
+    background: no-repeat transparent 6px -1720px url("../contenttypes-sprite.png");
+}
