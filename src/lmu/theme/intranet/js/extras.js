@@ -11,6 +11,8 @@ if ($("#blog-person").length > 0) {
     $("#blog-person").load("https://iukintest.verwaltung.uni-muenchen.de/functions/blog-mit/frontpage_view.include?author="+ck);
 }
 
+
+// Plone Edit Form helpers 
 $("input#form-buttons-save").addClass("button radius small")
 $("input#form-buttons-cancel").addClass("button radius small")
 $("input#form-buttons-comment").addClass("button radius small")
@@ -18,6 +20,10 @@ $("input#form-buttons-comment").addClass("button radius small")
 $("input#form-widgets-ILeadImage-image-input").addClass("button small")
 */
 
+
+
+/*
+// Progressive Enhancement For Search Bar
 $(document).ready( function () {
     $("#sb-container").css("height: 50px !important; overflow: hidden");
     $(".search-container").css('position: absolute;');
@@ -28,3 +34,4 @@ $(document).ready( function () {
     $('.top-bar').toggleClass('expanded');
 //$("#togglesearch").toggle();
 })
+*/

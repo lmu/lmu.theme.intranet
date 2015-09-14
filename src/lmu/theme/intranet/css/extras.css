@@ -126,6 +126,7 @@ div.field a.formHelpToggle {
     margin-left: 10px;
 }
 
+/*
 div.field input[type="text"],
 div.field input[type="password"],
 div.field input[type="date"],
@@ -144,7 +145,13 @@ div.field div.richTextWidget,
 div.field div.named-image-widget {
     width: calc(100% - 35px);
 }
+*/
 
+div.field div.widget-field-wrapper {
+    width: calc(100% - 35px);
+}
+
+/*
 ul.list-link-white li {
     display: block;
     background-image: none;
@@ -156,6 +163,7 @@ ul.list-link-white li a {
     background: rgba(0, 0, 0, 0) url("../../img/bg-arrow-white.png") no-repeat scroll right center;
     padding: 10px 20px 10px 0;
 }
+*/
 
 /* blog/pinnwand edit form */
 #content ul.previews {
