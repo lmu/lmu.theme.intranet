@@ -13,9 +13,11 @@ if ($("#blog-person").length > 0) {
 
 
 // Plone Edit Form helpers 
+/*
 $("input#form-buttons-save").addClass("button radius small")
 $("input#form-buttons-cancel").addClass("button radius small")
 $("input#form-buttons-comment").addClass("button radius small")
+*/
 /* 
 $("input#form-widgets-ILeadImage-image-input").addClass("button small")
 */
