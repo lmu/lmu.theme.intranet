@@ -243,6 +243,10 @@ label[for='form-widgets-comment-text'] {
     white-space: nowrap;
 }
 
+.userrole-authenticated #edit-bar {
+    display: none;
+}
+
 
 /* TinyMCE Anpassungen */
 
