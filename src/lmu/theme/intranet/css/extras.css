@@ -23,9 +23,6 @@ div.commentImage img {
 div.fieldTextFormat {
     display: none;
 }
-div#formfield-form-widgets-IVersionable-changeNote {
-    display: block !important;
-}
 
 form#form input[type="text"].text-widget {
     height: 100%;
@@ -238,8 +235,18 @@ div.overlaybg div.close, div.overlay div.close {
     padding: 20px;
 }
 
+.overlay-ajax .pb-ajax #content ul.formTabs, .overlay-ajax .pb-ajax #content-core ul.formTabs {
+    display: none;
+}
+
+label[for='form-widgets-comment-text'] {
+    white-space: nowrap;
+}
+
 
 /* TinyMCE Anpassungen */
+
+/*
 .ploneSkin .mceButton {
     width: 40px !important;
     height: 40px !important;
@@ -257,6 +264,7 @@ div.overlaybg div.close, div.overlay div.close {
 }
 
 /* Theme */
+/*
 .ploneSkin span.mce_bold {background-position:0 0;}
 .ploneSkin span.mce_italic {background-position:-120px 0 !important;}
 .ploneSkin span.mce_underline {background-position:-280px 0 !important;}
@@ -295,6 +303,7 @@ div.overlaybg div.close, div.overlay div.close {
 .ploneSkin span.mce_backcolorpicker {background-position:-760px 0}
 
 /* Plugins */
+/*
 .ploneSkin span.mce_advhr {background-position:-0px -20px}
 .ploneSkin span.mce_ltr {background-position:-20px -20px}
 .ploneSkin span.mce_rtl {background-position:-40px -20px}
