@@ -4,22 +4,24 @@ $.ajax({cache: false});
 $.ajaxSetup({cache: false});
 
 
-$("#pinnwand").load("https://iukintest.verwaltung.uni-muenchen.de/functions/pinnwand/frontpage_view.include");
+$("#blog").load("https://iukintest.verwaltung.uni-muenchen.de/blog-mit/frontpage_view.include");
+$("#pinnwand").load("https://iukintest.verwaltung.uni-muenchen.de/pinnwand/frontpage_view.include");
 
 if ($("#blog-person").length > 0) {
-    var ck = $("#blog-person").text()
-    $("#blog-person").load("https://iukintest.verwaltung.uni-muenchen.de/functions/blog-mit/frontpage_view.include?author="+ck);
+    var ck = $("#blog-person").text();
+    $("#blog-person").load("https://iukintest.verwaltung.uni-muenchen.de/blog-mit/frontpage_view.include?author="+ck);
 }
 
+$(document).foundation();
 
 // Plone Edit Form helpers 
 
-$("input#form-buttons-save").addClass("button radius small")
-$("input#form-buttons-cancel").addClass("button radius small")
-$("input#form-buttons-comment").addClass("button radius small")
+$("input#form-buttons-save").addClass("button radius small");
+$("input#form-buttons-cancel").addClass("button radius small");
+$("input#form-buttons-comment").addClass("button radius small");
 
 /* 
-$("input#form-widgets-ILeadImage-image-input").addClass("button small")
+$("input#form-widgets-ILeadImage-image-input").addClass("button small");
 */
 
 
