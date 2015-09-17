@@ -24,7 +24,7 @@ $("input#form-widgets-ILeadImage-image-input").addClass("button small")
 
 
 
-
+/*
 // Progressive Enhancement For Search Bar
 $(document).ready( function () {
     $("#sb-container").css("height: 50px !important; overflow: hidden");
@@ -36,4 +36,4 @@ $(document).ready( function () {
     $('.top-bar').toggleClass('expanded');
 //$("#togglesearch").toggle();
 })
-
+*/

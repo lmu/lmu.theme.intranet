@@ -223,6 +223,19 @@
 <div id="footer-js-slot">
     <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/modernizr.js"></script>
     <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/jquery_min.js"></script>
+    <script >
+    // Progressive Enhancement For Search Bar
+        $(document).ready( function () {
+            $("#sb-container").css("height: 50px !important; overflow: hidden");
+            $(".search-container").css('position: absolute;');
+            $(".search-container").hide();
+            $(".search .fi-magnifying-glass").removeClass('fi-x');
+            $(".search-nav").removeClass("active");
+            $(".toggle .fi-list").toggleClass('fi-x');
+            $('.top-bar').toggleClass('expanded');
+        //$("#togglesearch").toggle();
+        })
+    </script>
     <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_min.js"></script>
     <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_equalizer.js"></script>
     <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/foundation_reveal.js"></script>
