@@ -3,13 +3,12 @@
 $.ajax({cache: false});
 $.ajaxSetup({cache: false});
 
-
-$("#blog").load("https://iukintest.verwaltung.uni-muenchen.de/blog-mit/frontpage_view.include");
-$("#pinnwand").load("https://iukintest.verwaltung.uni-muenchen.de/pinnwand/frontpage_view.include");
+$("#blog").load("https://iukintest.verwaltung.uni-muenchen.de/blog-mit/frontpage_view.include", function() {$(document).foundation();});
+$("#pinnwand").load("https://iukintest.verwaltung.uni-muenchen.de/pinnwand/frontpage_view.include", function() {$(document).foundation();});
 
 if ($("#blog-person").length > 0) {
     var ck = $("#blog-person").text();
-    $("#blog-person").load("https://iukintest.verwaltung.uni-muenchen.de/blog-mit/frontpage_view.include?author="+ck);
+    $("#blog-person").load("https://iukintest.verwaltung.uni-muenchen.de/blog-mit/frontpage_view.include?author="+ck, function() {$(document).foundation();});
 }
 
 $(document).foundation();
