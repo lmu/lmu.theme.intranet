@@ -247,6 +247,21 @@ label[for='form-widgets-comment-text'] {
     display: none;
 }
 
+figure .clearing-thumbs li, 
+figure [data-clearing] li {
+    margin-right: 0;
+}
+
+#label-upload {
+    margin-left: 10px;
+}
+
+.qq-uploader {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 
 /* TinyMCE Anpassungen */
 
