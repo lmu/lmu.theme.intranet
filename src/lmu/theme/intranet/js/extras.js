@@ -1,5 +1,6 @@
 /* extras.js */
 
+/*
 $.ajax({cache: false});
 $.ajaxSetup({cache: false});
 
@@ -10,6 +11,8 @@ if ($("#blog-person").length > 0) {
     var ck = $("#blog-person").text();
     $("#blog-person").load("https://www.intranet.verwaltung.uni-muenchen.de/blog-mit/frontpage_view.include?b_size=3&author="+ck, function() {$(document).foundation();});
 }
+*/
+
 
 /*
 // Progressive Enhancement For Search Bar

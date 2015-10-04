@@ -143,6 +143,14 @@ div.field div.widget-field-wrapper {
     width: 100%;
 }
 
+div.field select.datetime-widget.datetime-field {
+    width: auto;
+}
+
+#calroot {
+    width: 205px;
+}
+
 /*
 ul.list-link-white li {
     display: block;
