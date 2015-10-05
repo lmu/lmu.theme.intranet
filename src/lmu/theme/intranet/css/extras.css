@@ -151,6 +151,56 @@ div.field select.datetime-widget.datetime-field {
     width: 205px;
 }
 
+.qq-upload-button {
+    background-color: #007633;
+}
+
+.qq-upload-button input[type="file"] {
+    font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+}
+
+.reply p {
+    display: none;
+}
+
+.comment .commentActions {
+    float: left;
+    margin-right: 5px;
+}
+
+.comment button,.button {
+    padding-top:0.57143rem;
+    padding-right:1.14286rem;
+    padding-bottom:0.64286rem;
+    padding-left:1.14286rem;
+    font-size:0.78571rem;
+}
+
+
+.replyTreeLevel1,
+.replyTreeLevel2,
+.replyTreeLevel3 {
+    border-left: 8px solid #E6E6E6;
+}
+
+.replyTreeLevel1 {
+    padding-left: 40px;
+}
+
+.replyTreeLevel2 {
+    padding-left: 80px;
+}
+
+.replyTreeLevel3 {
+    padding-left: 120px;
+}
+
+div.field .datetimewidget-time {
+    display: none;
+}
+
 /*
 ul.list-link-white li {
     display: block;
