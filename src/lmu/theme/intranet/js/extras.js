@@ -1,10 +1,14 @@
 /* extras.js */
 
+$("body.site-30zb_zuv-intranet").find("footer").load("https://www.intranet.verwaltung.uni-muenchen.de/_include/footer.html", function() {$(document).foundation();});
+
+
 /*
 $.ajax({cache: false});
 $.ajaxSetup({cache: false});
 
 $("#blog").load("https://www.intranet.verwaltung.uni-muenchen.de/blog-mit/frontpage_view.include?b_size=3", function() {$(document).foundation();});
+
 $("#pinnwand").load("https://www.intranet.verwaltung.uni-muenchen.de/pinnwand/frontpage_view.include?b_size=3", function() {$(document).foundation();});
 
 if ($("#blog-person").length > 0) {

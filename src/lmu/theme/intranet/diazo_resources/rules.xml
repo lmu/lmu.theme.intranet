@@ -62,9 +62,10 @@
 
         <!-- Following rules should be disabled if used in development -->
 <!--
-        <replace css:theme-children="section#top-bar-section" css:content-children="section#top-bar-section" href="{$portal_url}/index.html" if="not(contains($portal_url, 'localhost'))" />
-        <replace css:theme-children="footer#footer" css:content-children="footer#footer" href="{$portal_url}/index.html" if="not(contains($portal_url, 'localhost'))" />
+        <replace css:theme-children="section#top-bar-section" css:content-children="section#top-bar-section" href="http://www.intranet.verwaltung.uni-muenchen.de/_include/top-bar-section.html" />
+        <replace css:theme-children="footer#footer" css:content-children="footer#footer" href="http://www.intranet.verwaltung.uni-muenchen.de/_include/footer.html" />
 -->
+
         
     </rules>
 
