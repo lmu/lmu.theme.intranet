@@ -53,6 +53,8 @@
                         <h1 class="mainnav-title"><a>Intranet<br>der ZUV</a></h1>
                     </li>
                 </ul>
+                <esi:include src="/_include/top-bar-section.html" />
+                <esi:remove >
                 <section class="top-bar-section">
                     <!-- Hauptnavigationspunkte aus zuv_startseite_hauptnavigation -->
                     <ul class="right">
@@ -88,6 +90,7 @@
                         </li>
                     </ul>
                 </section>
+                </esi:remove>
             </nav>
         </div>
     </div>
@@ -96,7 +99,7 @@
 </header>
 <div style="position: relative;">
 <div id="sb-container" >
-  <form action="/search" id="livesearch0">
+  <form action="search" id="livesearch0">
     <div id="search-container" class="row font-white search-container" style="display: block; position: relative;">
         <div class=" small-12 large-10 large-centered columns search-form">
             <input id="quicksearch" type="text" name="SearchableText" placeholder="Wonach suchen Sie?">
@@ -129,6 +132,8 @@
 <main id="content">
         Content
 </main>
+<esi:include src="/_include/footer.html" />
+<esi:remove>
 <footer id="footer">
     <!-- FOOTER -->
 <!-- Localizevariablen -->
@@ -219,6 +224,7 @@
 <!-- / FOOTER -->
 <br />
 </footer>
+</esi:remove>
 <div id="footer-js-slot">
     <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/modernizr.js"></script>
     <script src="https://cms-static.uni-muenchen.de/default/foundation-zuv/js/jquery_min.js"></script>
