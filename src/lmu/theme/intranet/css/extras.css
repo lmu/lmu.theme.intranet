@@ -75,14 +75,6 @@ fieldset#search-field button.searchButton {
     width: 40px;
 }
 
-.highlightedSearchTerm {
-    font-weight: bold;
-    color: #000;
-    background-color: yellow;
-    padding-right: 3px;
-    padding-left: 3px;
-}
-
 div.field label {
     font-weight: bold;
     font-size: 1em;
