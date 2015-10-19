@@ -1,6 +1,6 @@
 /* extras.js */
 
-$("body.site-30zb_zuv-intranet").find("footer").load("https://www.intranet.verwaltung.uni-muenchen.de/_include/footer.html", function() {$(document).foundation();});
+//$("body.site-30zb_zuv-intranet").find("footer").load("https://www.intranet.verwaltung.uni-muenchen.de/_include/footer.html", function() {$(document).foundation();});
 
 
 /*
