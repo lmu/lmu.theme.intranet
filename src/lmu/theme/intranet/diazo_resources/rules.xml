@@ -11,7 +11,7 @@
 -->
         <theme href="theme.html" /> 
         <notheme if="$ajax_load" />
-        <notheme if="contains($path, '*.include')" />
+        <notheme if="contains($path, '.include')" />
 
         <!-- Replace title with Plone's page title  -->
         <replace css:theme="html head title" css:content="html head title" />
