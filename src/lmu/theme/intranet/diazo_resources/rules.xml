@@ -6,14 +6,12 @@
 
     <!-- Apply the following rules to standard Plone pages -->
     <rules css:if-content="#visual-portal-wrapper">
-<!-- 
-        <theme href="https://iukintest.verwaltung.uni-muenchen.de/_assets/index.html" />
--->
+
         <theme href="theme.html" /> 
         <notheme if="$ajax_load" />
         <notheme if="contains($path, '.include')" />
-        <notheme if-path="frontpage_view.include" />
-        <notheme if-path="user_info.include" />
+        <!--<notheme if-path="frontpage_view.include" />
+        <notheme if-path="user_info.include" />-->
 
         <!-- Replace title with Plone's page title  -->
         <replace css:theme="html head title" css:content="html head title" />
@@ -37,10 +35,11 @@
         <before css:theme-children="html head" content="/html/head/meta" />
         <drop css:theme="html head meta[name=generator]" />
 
-        <append theme="/html/head" ><link rel="stylesheet" href="{$portal_url}/++resource++lmu.theme.intranet.css/extras.css" /></append>
+        <!--<append theme="/html/head" ><link rel="stylesheet" href="{$portal_url}/++resource++lmu.theme.intranet.css/extras.css" /></append>-->
 
         <!-- merge classes from Plone body with theme body -->
         <merge attributes="class" css:theme="body" css:content="body" />
+        <copy attributes="lang xml:lang" theme="/html" content="/html" />
         <replace attributes="action" css:theme="form#livesearch0" >
             <form action="${portal_url}/search" />
         </replace>
@@ -63,12 +62,8 @@
         <replace css:theme-children=".breadcrumb" css:content-children="#portal-breadcrumbs" />
 
         <!-- Following rules should be disabled if used in development -->
-
         <replace css:theme-children="section#top-bar-section" css:content-children="section#top-bar-section" href="/_include/top-bar-section.html" method="esi" />
-
         <replace css:theme-children="footer#footer" css:content-children="footer#footer" href="/_include/footer.html" method="esi" />
-
-
         
     </rules>
 
