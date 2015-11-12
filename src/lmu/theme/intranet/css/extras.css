@@ -61,7 +61,7 @@ fieldset#search-field button {
 }
 
 fieldset#search-field input[type="text"] {
-    width: calc(100% - 45px);
+    width: 100% !important;
 
 }
 
@@ -329,7 +329,17 @@ figure [data-clearing] li {
     padding-right: 10px;
 }
 
+.helper-font-size-small {
+    font-size: 75%;
+}
 
+.helper-font-size-large {
+    font-size: 125%;
+}
+
+.helper-font-size-double {
+    font-size: 200%;
+}
 
 /* TinyMCE Anpassungen */
 
