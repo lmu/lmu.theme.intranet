@@ -57,6 +57,7 @@
         
         <replace css:theme-children="#siteheader-person" css:content-children="#user" href="/VirtualHostBase/https/www.intranet.verwaltung.uni-muenchen.de:443/30_zentralbereich/30zb_zuv-intranet/VirtualHostRoot/user_info.include" method="esi" />
         <!--replace css:theme="a#link-sp" css:content="a#link-sp" href="/_include/portal-switcher.html" method="esi" /-->
+        <drop css:theme="a#link-sp" if="$serviceportaluser != 'True'" />
         <replace css:theme-children=".siteheader-name" css:content-children="#user-name" />
 
         <drop css:content=".breadcrumbSeparator" />
