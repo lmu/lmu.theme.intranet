@@ -341,6 +341,28 @@ figure [data-clearing] li {
     font-size: 200%;
 }
 
+li.LSRow {
+    margin-left: 3px;
+    margin-right: 3px;
+    border-bottom: 1px dotted #E6E6E6;
+}
+
+li.LSRow
+
+li.LSRow div.documentLocation a,
+li.LSRow div.documentLocation a:visited,
+li.LSRow div.documentLocation a:link {
+    display: inline;
+}
+
+.shortcut-icon {
+    border: 1px solid #007633;
+    border-radius: 5px;
+    background-color: #007633;
+    color: #FFF;
+    padding: 1px 3px;
+}
+
 /* TinyMCE Anpassungen */
 
 /*
