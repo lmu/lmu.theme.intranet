@@ -363,6 +363,16 @@ li.LSRow div.documentLocation a:link {
     padding: 1px 3px;
 }
 
+
+.dragging,
+table tr.dragging,
+.dragging.helper-border-top {
+    border-width: 3px;
+    border-color: green;
+    border-style: solid;
+    background-color: #E8FFEA;
+}
+
 /* TinyMCE Anpassungen */
 
 /*
