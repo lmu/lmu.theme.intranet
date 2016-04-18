@@ -1,5 +1,14 @@
 /* extras.css */
 
+form.itemorder.draggable {
+    min-height: 85px;
+    cursor: ns-resize;
+}
+
+span.contentHistory {
+    display: none;
+}
+
 figure.centered {
     margin-left: auto;
     margin-right: auto;
@@ -315,7 +324,7 @@ label[for='form-widgets-comment-text'] {
     display: none;
 }
 
-figure .clearing-thumbs li, 
+figure .clearing-thumbs li,
 figure [data-clearing] li {
     margin-right: 0;
 }
