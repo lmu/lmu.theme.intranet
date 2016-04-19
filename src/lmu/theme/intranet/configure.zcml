@@ -33,10 +33,10 @@
         directory="js"
         layer=".interfaces.ILMUIntranetTheme"
         />
-
+<!--
     <browser:jbot
         directory="template_overrides"
         layer=".interfaces.ILMUIntranetTheme"
         />
-
+-->
 </configure>
