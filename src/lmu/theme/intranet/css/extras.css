@@ -167,8 +167,13 @@ div.field select.datetime-widget.datetime-field {
 }
 
 .comment .commentActions {
-    float: left;
-    margin-right: 5px;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+#content .comment .commentActions form,
+#content .comment .commentActions form input {
+  margin-bottom: 0;
 }
 
 .comment button {
@@ -198,24 +203,33 @@ div.field select.datetime-widget.datetime-field {
     margin-bottom: 20px;
 }
 
-.replyTreeLevel1,
-.replyTreeLevel2,
-.replyTreeLevel3 {
-    border-left: 8px solid #E6E6E6;
+div.replyTreeLevel1,
+div.replyTreeLevel2,
+div.replyTreeLevel3,
+div.replyTreeLevel4,
+div.replyTreeLevel5 {
+    padding-left: 10px !important;
 }
 
-.replyTreeLevel1 {
-    padding-left: 40px;
+div.replyTreeLevel1 {
+    border-left: 10px solid #E6E6E6;
 }
 
-.replyTreeLevel2 {
-    padding-left: 80px;
+div.replyTreeLevel2 {
+    border-left: 20px solid #E6E6E6;
 }
 
-.replyTreeLevel3 {
-    padding-left: 120px;
+div.replyTreeLevel3 {
+    border-left: 30px solid #E6E6E6;
 }
 
+div.replyTreeLevel4 {
+    border-left: 40px solid #E6E6E6;
+}
+
+div.replyTreeLevel5 {
+    border-left: 50px solid #E6E6E6;
+}
 div.field .datetimewidget-time {
     display: none;
 }
@@ -491,5 +505,8 @@ table tr.dragging,
 .ploneSkin span.mce_cite {background-position:-920px -20px}
 .ploneSkin span.mce_del {background-position:-940px -20px}
 .ploneSkin span.mce_ins {background-position:-960px -20px}
+.ploneSkin span.mce_pagebreak {background-position:0 -40px}
+.ploneSkin .mce_spellchecker span.mceAction {background-position:-540px -20px}
+eSkin span.mce_ins {background-position:-960px -20px}
 .ploneSkin span.mce_pagebreak {background-position:0 -40px}
 .ploneSkin .mce_spellchecker span.mceAction {background-position:-540px -20px}
