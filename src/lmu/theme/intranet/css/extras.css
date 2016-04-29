@@ -1,5 +1,11 @@
 /* extras.css */
 
+.ploneSkin table.mceListBox .mceText {
+    width: 200px !important;
+    min-width: 200px;
+}
+
+
 form.itemorder.draggable {
     min-height: 85px;
     cursor: ns-resize;
