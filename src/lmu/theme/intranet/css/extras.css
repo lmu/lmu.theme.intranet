@@ -18,3 +18,13 @@ li.LSRow.LSMore {
   border-top: thin dotted #aaa;
 */
 }
+
+.uploadifybuttons input[type=button] {
+    padding: 5px;
+    border: thin solid #455881;
+    background-color: #455881;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 100%;
+}
